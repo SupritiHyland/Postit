@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :posts
 	has_many :comments
-end
+
+	has_secure_password validations: false
+end 	 	
